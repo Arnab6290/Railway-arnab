@@ -1,0 +1,126 @@
+<html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Times new roman;
+            font-weight: normal;
+        }
+        .head{
+            background-color: #4379F2;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .head a{
+            color: white;
+            text-decoration: none;
+            margin-left: 50px;
+            font-size: 20px;
+        }
+        .head a:hover{
+            border-style: inset;
+            border-color: black;
+            border-radius: 5px;
+        }
+        .IR{
+            height: 80px;
+            font-size: 25px;
+            background-image: url(https://seeklogo.com/images/I/indian-railways-logo-9292A78405-seeklogo.com.png);
+            background-repeat: no-repeat;
+            background-size: 70px;
+            background-position-x: 150px;
+            background-position-y: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imag{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            background-color:#4379F2 ;
+            height: 50px;
+            width: 600px;
+            margin-left: 450px;
+            color: white;
+            font-size: 25px;
+        }
+        #ticket{
+           text-align: center; 
+           font-size: 20px;
+        }
+        #num{
+            margin-left: 400px;
+            margin-top: 60px;
+        }
+        .number{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        input{
+            padding:10px 10px ;
+            border-radius: 5px;
+
+        }
+        .number button{
+            background-color: #4379F2;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 5px;
+            margin-left: 5px;
+
+        }
+        button .hover{
+            
+        }
+        #bottom{
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <a href="#">Indian Railways Enquiry</a>
+        <a href="#">PNR Enquiry</a>
+        <a href="#">Reserved Train Between Station</a>
+        <a href="#">Seat Availability</a>
+        <a href="#">Fare Enquiry</a>
+    </div>
+    <div class="IR">
+        INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY
+        
+    </div>
+    <marquee>please help indian railways and govement of india in moving towards a digitized and cashless economy.</marquee>
+    <div class="imag">
+    <img src="http://contents.irctc.co.in/en/GPT_NWEB_HOME_CENTER.jpeg"></div>
+    <div class="form">
+        Passenger Current Status Enquiry
+    </div>
+    <p id="ticket">Enter the PNR for booking below to get the current status.You will find it in the top left corner of the ticket.</p>
+    <h4 id="num">Enter PNR no.</h4>
+    <div class="number">
+    <tr><td><input type="number"name="pnr"placeholder="Enter PNR number" required></td></tr>
+    <button>submit</button>
+    <button>clear</button>
+</div>
+<div id="bottom">
+    <img src="https://tpc.googlesyndication.com/simgad/198902124229249073">
+</div>
+</body>
+</html>  
+

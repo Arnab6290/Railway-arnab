@@ -1,0 +1,127 @@
+<html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function myFunction(){
+            alert("check the form before submitted");
+        }
+    </script>
+    <style>
+    .header{
+        background-color: #4379F2;
+        color: white;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        letter-spacing: 3px;
+        background-image: url(https://seeklogo.com/images/I/indian-railways-logo-9292A78405-seeklogo.com.png );
+        background-repeat: no-repeat;
+        background-size: 85px;
+        background-position-y: 9px;
+        background-position-x: 300px;
+    }
+    body{
+        background-image: url(https://c8.alamy.com/comp/2RP821G/190215-new-delhi-feb-15-2019-indian-prime-minister-narendra-modi-flags-off-the-country-s-first-semi-high-speed-train-vande-bharat-express-at-new-delhi-railway-station-in-india-on-feb-15-2019-the-train-will-travel-from-delhi-to-varanasi-in-9-hours-and-45-minutes-officials-said-india-new-delhi-pm-semi-high-speed-train-parthaxsarkar-publicationxnotxinxchn-2RP821G.jpg);
+        background-size: 100%;
+        background-position-y: 110px;
+        background-repeat: no-repeat;
+    }
+    table{
+        margin-top: 150px;
+        border-radius: 8px;
+        background-color: white;
+        margin-right: 400px;
+        height: 500px;
+        width: 650px;
+        margin-bottom: 100px;
+
+    }
+    textarea{
+        width: 100%;
+    }
+    td{
+        text-align: center;
+        border-radius: 4px;
+        height: 40px;
+    }
+    input{
+        width: 100%;
+        height: 100%;
+    }
+    th{
+        background-color: #4379F2;
+        color: white;
+        letter-spacing: 5px;
+        font-size: 28px;
+        border-radius: 4px;
+        height: 50px;
+    }
+    .btn{
+        background-color: orange;
+        color: white;
+        border-color: orange;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size:18px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Indian Railways Ticket Booking System</p>
+    </div>
+    <center><form action="/" method="post">
+        <table border="1" width="30%" height="20%">
+            <tr><th colspan="2">Book Ticket</th></tr>
+            
+            <tr><td><input type="text" id="from" placeholder="From..." required></td></tr>
+
+            <tr>
+                <td><input type="text" id="to" placeholder="To..." required></td>
+            </tr>
+            <tr>
+                <td><input type="date" id="date" required></td>
+            </tr>
+            <tr><td><select id="gen" required>
+                <option>General</option>
+                <option>Ladies</option>
+                <option>Lower Berth/option>
+                <option>Person With Disability</option>
+                <option>Duty Pass</option>
+                <option>Tatkal</option>
+            </select></td>
+             <td><select id="class" required>
+                <option>AC First Class</option>
+                <option>AC 2 Tier</option>
+                <option>First Class</option>
+                <option>AC 3 Tier</option>
+                <option>AC 3 Economy</option>
+                <option>AC Chair Car</option>
+                <option>Sleeper</option>
+                <option>Second Sitting</option>
+            </select></td></tr>
+             <tr><td>Person With Disability Concession</td>
+                 <td><input type="checkbox" value="person with disability concession"></td>
+             </tr>
+             <tr><td>Flexible With Date</td>
+                 <td><input type="checkbox" value="flexible with date"></td>
+             </tr>
+             <tr><td>Railway Pass Concession</td>
+                 <td><input type="checkbox" value="railway pass concession"></td>
+             </tr>
+              <tr><td>Train With Available Berth</td>
+                 <td><input type="checkbox" value="train with available berth"></td>
+             </tr>
+             <tr ><td><button class="btn" onclick="myFunction()">search</button></td>
+             </tr>
+        </table>
+    </form></center>
+</body>
+</html>    
